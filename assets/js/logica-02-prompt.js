@@ -1,0 +1,102 @@
+function exemplo01() {
+//prompt permite interação com o usuário, ele poderá digitar algo
+
+    //string
+    let nome = prompt("Digite o seu nome");
+
+    let sobrenome= prompt("Digite o seu sobrenome");
+
+//Gerar o nome Completo
+//Concatenando nome, espaço e sobrenome
+    let nomeCompleto = nome + " " +sobrenome;
+
+alert ("Nome completo:" + nomeCompleto)
+}
+
+
+function conversaoStringParaInt() {
+//Tudo que o usuário  digitar vem como string(texto)
+
+// Converter uma string para Int
+// "8" => 8
+    let numero1 = parseInt("8");
+    let numero2= parseInt ("12");
+    let soma = numero1 +numero2;
+    alert("Soma:" + soma)
+}
+
+function conversaoStringParaIntAlternativo() {
+//tudo que o usuário digitar vem como string(texto)
+
+//Converter uma string para int
+// "8" => 8
+
+    let numero1 = parseInt(prompt("Digite o número 1"));
+    let numero2 = parseInt(prompt("Digite o número 2"));
+    let soma = numero1 + numero2;
+    alert ("Soma:" + soma);
+}
+
+function conversaoStringParaFloat() {
+// Converter  de String para float
+
+    let quantidadeHoras = parseInt(prompt("Digite a quantidade de horas trabalhadas"));
+    let valorHora = parseFloat(prompt("Digite o valor hora"));
+
+    let salarioBruto = quantidadeHoras * valorHora;
+    alert(
+        "Quantidade de horas:" + quantidadesHoras + "\n" +
+        "Valor da hora: " + valorHora + "\n" +
+        "Salário bruto: " + salarioBruto
+    );
+}
+
+
+function exempplo02() {
+    let nome= prompt("Digite o nome do atleta");
+
+    //Solicitar a altura em metros, para isso utilizaremos um float
+    let altura = parseFloat(prompt("Digite a altura"));
+
+    let peso = parseFloat(prompt("Digite o peso"));
+
+    let imc = peso / (altura *altura);
+
+    alert("Atleta " + nome + " tem IMC" +imc);
+}
+
+function exemplo03() {
+    let anoNascimento = parseInt(prompt("Digite o seu ano de nascimento"));
+
+    //let anoAtual = 2026;
+    let anoAtual = new Date().getFullYear();
+
+    let idade = anoAtual - anoNascimento;
+
+    alert("idade: " + idade);
+}
+
+function exemplo04() {
+
+    let modelo = prompt("Informe o modelo do carro");
+    let ano = parseInt(prompt("Informe o ano do carro"));
+
+    let velocidadeMaxima = parseInt(prompt("Informe a velocidade máxima"));
+    let tempoViagemHoras = parseInt(prompt("Informe as horas da viagem"));
+
+    let distancia = velocidadeMaxima * tempoViagemHoras;
+
+
+    alert("Carro:" + modelo +
+        "\nAno: " + ano +
+        "\n Distância estimada: " + distancia + " km"
+
+
+
+    )
+
+
+
+
+
+}
