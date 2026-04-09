@@ -104,3 +104,116 @@ regular = 0;
 bom = 0;
 otimo = 0;
 }
+
+function exemploOperadorLogioE() {
+let idade = parseInt(prompt("Digite a idade"))
+
+//0,1,2,3,4,...17
+
+    if ((idade >= 0) && (idade <= 17)) {
+ alert ("Criança ou adolescente");  
+}
+    else if (idade >= 18) {
+     alert("Adulta");   
+    }
+
+    else {
+        alert("Idade inválida");
+    }
+
+}
+
+/*
+Tabela Verdade Operador E 
+V e V => V
+V e F => F
+F e V => F
+F e F => F
+*/
+
+
+function exemploOperadorLogicoOu() {
+let transporte = prompt("Digite o meio de transporte para viajar");
+
+//pipeline
+
+if ((transporte === "moto") || (transporte === "carro")) {
+    alert ("Viajar de boas");
+}
+ else {
+    alert ("Não vamos viajar");
+ }
+}
+
+
+/*
+
+Limpar Banheiro ou limpar janelas => pão de queijo com queijo de minas caso contrário...
+
+Tabela Verdade Ou
+V ou V => V
+V ou F => V
+F ou V => V
+F ou F => F
+*/
+
+//moba, fps => 10%
+// aventura,. rpg => 15%
+//roguelike, soulslike => 20%
+
+function exemploLoja() {
+let nome1 = prompt("Digite o nome do jogo 1");
+let categoria1 = prompt ("Digite a categoria do jogo");
+let precoBase1 = 399.90;
+
+let precoComDesconto1 = 0;
+let percentualDesconto1 = 0;
+let precoDesconto1= 0;
+
+if ((categoria1 === "moba") || (categoria1 === "fps")) {
+    percentualDesconto1 = 0.10;
+    precoDesconto1 = precoBase1 * precoDesconto1;
+    precoComDesconto1 = precoBase1 - precoDesconto1;
+} else if ((categoria1 === "aventura") || (categoria1 === "rpg")) {
+percentualDesconto1= 0.15;
+precoDesconto1 = percentualDesconto1 * precoBase1;
+} else if ((categoria1 === "roguelike") || (categoria1 === "soulslike")) {
+    percentualDesconto1 = 0.20;
+    precoDesconto1 = precoBase1 * percentualDesconto1;
+    precocomDesconto1 = precoBase1 - precoDesconto1;
+}
+
+let nome2 = prompt("Digite o nome do jogo 2");
+let categoria2 = prompt("Digite a categoria do jogo");
+let precoBase2 = 190.99;
+
+let precoComDesconto2 = 0;
+let percentualDesconto2 = 0;
+let precoDesconto2 = 0;
+
+if ((categoria2 === "moba") || (categoria2 === "fps")) {
+percentualDesconto2 = 0.10;
+precoDesconto2 = precoBase2 * percentualDesconto2;
+precoComDesconto2 = precoBase2 - precoDesconto2;
+} else if ((categoria2 === "aventura") || (categoria2 === "rpg")) {
+percentualDesconto2 = 0.15;
+precoDesconto2 = percentualDesconto2 * precoBase2;
+precoComDesconto2 = precoBase2 - precoDesconto2;
+} else if ((categoria2 === "roguelike") || (categoria2 === "soulslike")) {
+percentualDesconto2 = 0.20;
+precoDesconto2 = precoBase2 * percentualDesconto2;
+precocomDesconto2 = precobase2 - precoComDesconto2;
+}
+
+let totalPedido = precoComDesconto1 + precoComDesconto2;
+
+
+alert (
+"Nome: " +nome1 +
+"\nCategoria: " + categoria1 +
+"\nPreço base: R$ " + precoBase1.toFixed(2) +
+"\nValor do Desconto: R$ " + precoDesconto1.toFixed(2) +
+"\nPercentual de Desconto: " + percentualDesconto2 * 100 + "%" +
+"\n Preço do jogo: R$ " + precoComDesconto2.toFixed(2) +
+"\nTotal: R$ " + totalPedido.toFixed(2));
+}
