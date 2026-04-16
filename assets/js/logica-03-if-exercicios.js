@@ -753,11 +753,15 @@ function mostrarQuatroPrimeirosCaracteres() {
 }
 
 function separarNomeCompleto() {
-    let nome = prompt("Digite o nome completo")
-    let divisor =
-                                        //PRECISO DE AJUDA, NÃO SOUBE FAZER
-        console.log();
+    let nomeCompleto = prompt("Digite seu nome completo: ");
+    
+    let partes = nomeCompleto.trim().split(" ");
 
+    let nome = partes[0];
+    let sobreNome = partes[1];
+    let sobreNome2 = partes[2];
+
+    console.log(nome + "\n" + sobreNome + " \n" + sobreNome2);
 }
 
 function removerEspacosExtras() {
@@ -776,9 +780,12 @@ function repetirPalavraTresVezes() {
 
 function encontrarPosicaoPalavra() {
     let frase = "Eu estudo JavaScript todos os dias"
-    let palavra = frase[10]
+    let palavra = frase.indexOf("JavaScript")
                                         //PRECISO DE AJUDA, NÃO SOUBE FAZER
+    console.log(frase);
+    
     console.log(palavra);
+
 }
 
 function verificarInicioEFim() {
@@ -799,3 +806,5 @@ let final = email.replace("@gmail.com" , "@hotmail.com")
 
 console.log("Seu email alterado: " +final);
  }
+
+ 
