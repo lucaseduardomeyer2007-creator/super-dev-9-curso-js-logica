@@ -754,7 +754,7 @@ function mostrarQuatroPrimeirosCaracteres() {
 
 function separarNomeCompleto() {
     let nomeCompleto = prompt("Digite seu nome completo: ");
-    
+
     let partes = nomeCompleto.trim().split(" ");
 
     let nome = partes[0];
@@ -778,12 +778,33 @@ function repetirPalavraTresVezes() {
     console.log(palavraRepetida);
 }
 
+/*function quebrarString() {
+    //String              01234
+    let horaMinuto = "20:30";
+
+    let partes = horaMinuto.split(":");
+    //
+    // split => ["20", "30"]
+
+    console.log(partes);
+
+    let hora = partes[0];
+    let minuto = partes[1];
+
+    console.log("Hora: " + hora);
+    console.log("Minuto: " + minuto);*/
+
+
+
+
+
 function encontrarPosicaoPalavra() {
     let frase = "Eu estudo JavaScript todos os dias"
-    let palavra = frase.indexOf("JavaScript")
-                                        //PRECISO DE AJUDA, NÃO SOUBE FAZER
+    let palavra = frase.split(" ")
+    let palavrafinal = palavra.slice()
+    //PRECISO DE AJUDA, NÃO SOUBE FAZER
     console.log(frase);
-    
+
     console.log(palavra);
 
 }
@@ -799,12 +820,92 @@ function verificarInicioEFim() {
         alert("A palavra termina com a letra O")
 }
 
- function trocarDominioEmail() {
-let email = prompt("Digite seu e-mail");
-let final = email.replace("@gmail.com" , "@hotmail.com")
+function trocarDominioEmail() {
+    let email = prompt("Digite seu e-mail");
+    let final = email.replace("@gmail.com", "@hotmail.com")
 
 
-console.log("Seu email alterado: " +final);
- }
+    console.log("Seu email alterado: " + final);
+}
 
- 
+
+/*
+Ex. 1 Criar uma função exercicio01SolicitarDadosMedico, criar um while para solicitar os dados de 5 médicos.
+Solicitar o nome do médico e seu CRM
+
+No final de todos os médicos apresentar mensagem "Obrigado por utilizar nosso sistema Hospitalar".
+
+*/
+
+function exercicio01SolicitarDadosMedico() {
+
+    let indice = 0;
+
+
+    while (indice < 5) {
+
+        let nome = prompt("Digite seu nome");
+        alert("Seu nome é: " + nome)
+        let crm = prompt("Digite seu CRM");
+        alert("Seu CRM é: " + crm)
+
+        indice = indice + 1;
+    }
+    alert("Obrigado por utilizar nosso sistema Hospitalar")
+}
+
+
+function exercicio02SolicitarDadosPaciente() {
+    let indice = 0;
+    let quantidadePacientes = parseInt(prompt("Digite a quantidade de pacientes"))
+    while (indice < quantidadePacientes) {
+        let nome = prompt("Digite seu nome");
+        alert(nome)
+        let idade = prompt("Digite sua idade");
+        alert(idade)
+
+        indice = indice + 1;
+    }
+    alert("Quantidade de pacientes cadastrados " + quantidadePacientes)
+}
+
+function exercicio03SomarIdadesPacientes() {
+    let indice = 0;
+    let idade = 0;
+    let somaIdade = 0;
+
+    while (indice < 6) {
+        idade = parseInt(prompt("Digite sua idade"))
+        alert(idade)
+
+        somaIdade = somaIdade + idade
+
+
+        indice = indice + 1;
+    }
+
+    alert("A Soma total das idades é de " + somaIdade);
+}
+
+function exercicio04CalcularMediaIdades() {
+    let indice = 0;
+    let somaIdade = 0;
+    
+    while(indice < 5) {
+        
+        let idade = parseInt(prompt("Digite sua idade"));
+        somaIdade = somaIdade + idade
+        
+        indice = indice + 1
+    }
+    
+    let media = somaIdade / 5;
+    alert("A média das idades é: " + media)
+}
+
+function exercicio05ContarMaioresIdade() {
+
+
+
+    
+}

@@ -214,3 +214,27 @@ function repetirEnquantoUsuarioDesejaContinuarComConfirm() {
 
 alert("Quantidade de pacientes que foram cadastrados: " + quantidadePacientesCadastrados)
 }
+
+
+function exemploValidacao() {
+    let indice = 0;
+
+    while(indice < 3) {
+        let nome = prompt("Digite o nome ").trim();
+        // o nome é valido quando 2 caracteres e no maximo 20
+        while ((nome.length < 2 ) || (nome.length > 20)) {
+            nome = prompt("Nome inváilido, deve conter no minino 2 caracteres e no maximo 20 caracteres.\nDigite o nome").trim();
+        }
+
+        let idade = parseInt(prompt("digite a idade"));
+        // idade minima de 16 para ir no show e maximo 100
+        while ((idade < 16 ) || ( idade > 100)){
+            idade = parseInt(prompt(
+                "idade invalida, deve ser entre 16 e 100 anos"
+            ))
+        }
+        indice = indice + 1;
+    }
+}
+
+
