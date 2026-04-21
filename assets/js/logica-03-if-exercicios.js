@@ -905,7 +905,14 @@ function exercicio04CalcularMediaIdades() {
 
 function exercicio05ContarMaioresIdade() {
 
+let nome = prompt("Digite seu nome");
+let idade = prompt("Digite sua idade")
 
+while(indice <6) {
 
+idade = 
+
+indice = indice +1;    
+}
     
 }
