@@ -113,8 +113,10 @@ function exercicio03ContarAteDez() {
 
     for (let indice = 0; indice < 11; indice = indice + 1) {
 
-        console.log(indice)
+        console.log(indice);
+
     }
+
 }
 
 
@@ -122,7 +124,8 @@ function exercicio04ContarRegressivo() {
 
     for (let indice = 5; indice > 0; indice = indice - 1) {
 
-        alert(indice)
+        console.log(indice);
+
     }
 }
 
@@ -145,16 +148,13 @@ function exercicio03SomarIdadesPacientes() {
 
 
 function exercicio05SomarNumeros() {
-
-    let soma = 0;
-
     for (indice = 0; indice < 6; indice = indice + 1) {
 
-        soma = soma + indice
+        let soma = soma + indice
+
+        console.log(soma);
+
     }
-    console.log(soma);
-
-
 }
 
 
@@ -181,11 +181,107 @@ function exercicio07MostrarNumerosImpares() {
 }
 
 function exercicio08SolicitarTresNomes() {
-    
-let nome = prompt("Digite seu nome")
-    for (indice = 0; indice > 3; indice = indice + 1) {
-    
-        nome = nome + indice
+    let nomeTres = " "
+
+    for (indice = 0; indice < 3; indice = indice + 1) {
+        let nome = prompt("Digite seu nome")
+        nomeTres = nomeTres + nome + " "
     }
-    console.log(nome);
+    console.log(nomeTres);
+}
+
+function exercicio09SomarTresIdades() {
+    let soma = 0;
+
+    for (let indice = 0; indice < 3; indice = indice + 1) {
+        let idade = parseInt(prompt("Digite sua idade"));
+
+        soma = soma + idade
+    }
+
+    console.log("Resultado final:", soma);
+}
+
+function exercicio10CalcularMediaSimples() {
+    let somaNotas = 0;
+
+    for (indice = 0; indice < 3; indice = indice + 1) {
+        let nota = parseInt(prompt("Digite sua nota"))
+
+        somaNotas = somaNotas + nota / 3;
+    }
+
+    console.log(somaNotas);
+
+}
+
+
+function exercicio11ContarMaioresDeIdade() {
+
+    let contador = 0;
+    for (indice = 0; indice < 5; indice = indice + 1) {
+        let idade = parseInt(prompt("Digite sua idade"))
+        if (idade >= 18) {
+            contador = contador + 1;
+        }
+
+    }
+    console.log("Total de maiores de idade:", contador)
+}
+
+function exercicio12MostrarTabuada() {
+    let numero = parseInt(prompt("Digite um número para ver a tabuada"))
+
+    for (let indice = 1; indice <= 10; indice = indice + 1) {
+        console.log(numero + " x " + indice + " = " + (numero * indice));
+    }
+}
+
+
+function exercicio13ContarLetrasNomes() {
+    for (let indice = 0; indice < 4; indice = indice + 1) {
+
+        let nome = prompt("Digite um nome da pessoa" + (indice + 1));
+
+        console.log("O nome " + nome + " possui " + nome.length + " letras");
+    }
+}
+
+function exercicio14MaiorNumero() {
+    let maiorNumero = 0;
+    for (indice = 0; indice < 4; indice = indice + 1) {
+        let numero = parseInt(prompt("Digite um número"))
+        if (numero > maiorNumero) {
+            maiorNumero = numero
+        }
+    }
+    console.log("O maior número é " + maiorNumero);
+}
+
+
+function exercicio15MenorNumero() {
+let menorNumero = 900000000000000000000000000000000000000000000000000000000000000000;
+    for (indice = 0; indice < 4; indice = indice + 1) {
+        let numero = parseInt(prompt("Digite um número"))
+        if (numero < menorNumero) {
+            menorNumero = numero
+        }
+    }
+    console.log("O menor número é " + menorNumero);
+}
+
+function exercicio16ContarPositivos() {
+
+for(indice = 0; indice < 5; indice = indice + 1) {
+
+let numero = parseInt(prompt("Digite um número"))
+
+numeroTotal = +"Quantidade de numeros acima de 0" + numeroTotal + numero
+if(numero >=0) {
+    alert("O número é positivo")
+}
+console.log(numero + " Quantidade de números acima de 0" + numeroTotal);
+
+}
+
 }
