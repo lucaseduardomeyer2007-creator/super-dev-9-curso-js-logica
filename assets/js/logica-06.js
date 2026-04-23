@@ -260,7 +260,7 @@ function exercicio14MaiorNumero() {
 
 
 function exercicio15MenorNumero() {
-let menorNumero = 900000000000000000000000000000000000000000000000000000000000000000;
+    let menorNumero = 900000000000000000000000000000000000000000000000000000000000000000;
     for (indice = 0; indice < 4; indice = indice + 1) {
         let numero = parseInt(prompt("Digite um número"))
         if (numero < menorNumero) {
@@ -272,16 +272,69 @@ let menorNumero = 90000000000000000000000000000000000000000000000000000000000000
 
 function exercicio16ContarPositivos() {
 
-for(indice = 0; indice < 5; indice = indice + 1) {
+    for (indice = 0; indice < 5; indice = indice + 1) {
 
-let numero = parseInt(prompt("Digite um número"))
+        let numero = parseInt(prompt("Digite um número"))
 
-numeroTotal = +"Quantidade de numeros acima de 0" + numeroTotal + numero
-if(numero >=0) {
-    alert("O número é positivo")
+        numeroTotal = +"Quantidade de numeros acima de 0" + numeroTotal + numero
+        if (numero >= 0) {
+            alert("O número é positivo")
+        }
+        console.log(numero + " Quantidade de números acima de 0" + numeroTotal);
+
+    }
+
 }
-console.log(numero + " Quantidade de números acima de 0" + numeroTotal);
+
+function exercicio17SomarPares() {
+    let soma = 0;
+    for (let indice = 0; indice < 4; indice = indice + 1) {
+        let numero = parseInt(prompt("Digite 5 números"))
+
+        if (numero % 2 === 0) {
+            soma = soma + numero
+        }
+    }
+    console.log(soma);
+}
+
+function exercicio18MostrarMultiplosDeTres() {
+
+    for (let indice = 0; indice < 29; indice = indice + 1) {
+        let numero = parseInt(prompt("Digite um número que seja divisor de 3 até 30"))
+        if (numero % 3 === 0) {
+            alert("Esse número é múltiplo de 3")
+        }
+        else {
+            alert("Esse número não é múltiplo de 3")
+
+        }
+
+    }
 
 }
 
+function exercicio19CadastrarProdutos() {
+
+    for (let indice = 0; indice < 3; indice = indice + 1) {
+
+        let nomeProduto = prompt("Digite um produto");
+
+    }
+    console.log("Produtos cadastrados com sucesso");
 }
+
+function exercicio20RelatorioSimples() {
+    let soma = 0;
+    let media = 0;
+    let pessoasCadastradas = 0;
+    for (let indice = 0; indice < 3; indice = indice + 1) {
+        let nome = prompt("Digite seu nome");
+        let idade = parseInt(prompt("Digite sua idade"))
+        pessoasCadastradas = pessoasCadastradas + 1;
+        soma = soma + idade;
+    }
+    media = media + idade / 3;
+    console.log("Quantidades de pessoas cadastradas: " + pessoasCadastradas + "\n" + "Soma das idades: " + soma + "\n" + "Média das idades: " + media);
+}
+
