@@ -327,14 +327,17 @@ function exercicio19CadastrarProdutos() {
 function exercicio20RelatorioSimples() {
     let soma = 0;
     let media = 0;
+    
     let pessoasCadastradas = 0;
     for (let indice = 0; indice < 3; indice = indice + 1) {
         let nome = prompt("Digite seu nome");
         let idade = parseInt(prompt("Digite sua idade"))
+        
         pessoasCadastradas = pessoasCadastradas + 1;
         soma = soma + idade;
+        media = media + idade / 3;
     }
-    media = media + idade / 3;
+    
     console.log("Quantidades de pessoas cadastradas: " + pessoasCadastradas + "\n" + "Soma das idades: " + soma + "\n" + "Média das idades: " + media);
 }
 
