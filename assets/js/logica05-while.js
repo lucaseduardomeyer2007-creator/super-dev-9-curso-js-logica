@@ -238,3 +238,83 @@ function exemploValidacao() {
 }
 
 
+function exercicio01SolicitarDadosMedico() {
+
+    let indice = 0;
+
+
+    while (indice < 5) {
+
+        let nome = prompt("Digite seu nome");
+        alert("Seu nome é: " + nome)
+        let crm = prompt("Digite seu CRM");
+        alert("Seu CRM é: " + crm)
+
+        indice = indice + 1;
+    }
+    alert("Obrigado por utilizar nosso sistema Hospitalar")
+}
+
+
+function exercicio02SolicitarDadosPaciente() {
+    let indice = 0;
+    let quantidadePacientes = parseInt(prompt("Digite a quantidade de pacientes"))
+    while (indice < quantidadePacientes) {
+        let nome = prompt("Digite seu nome");
+        alert(nome)
+        let idade = prompt("Digite sua idade");
+        alert(idade)
+
+        indice = indice + 1;
+    }
+    alert("Quantidade de pacientes cadastrados " + quantidadePacientes)
+}
+
+function exercicio03SomarIdadesPacientes() {
+    let indice = 0;
+    let idade = 0;
+    let somaIdade = 0;
+
+    while (indice < 6) {
+        idade = parseInt(prompt("Digite sua idade"))
+        alert(idade)
+
+        somaIdade = somaIdade + idade
+
+
+        indice = indice + 1;
+    }
+
+    alert("A Soma total das idades é de " + somaIdade);
+}
+
+function exercicio04CalcularMediaIdades() {
+    let indice = 0;
+    let somaIdade = 0;
+    
+    while(indice < 5) {
+        
+        let idade = parseInt(prompt("Digite sua idade"));
+        somaIdade = somaIdade + idade
+        
+        indice = indice + 1
+    }
+    
+    let media = somaIdade / 5;
+    alert("A média das idades é: " + media)
+}
+
+function exercicio05ContarMaioresIdade() {
+
+let nome = prompt("Digite seu nome");
+let idade = prompt("Digite sua idade")
+
+while(indice <6) {
+
+idade = 
+
+indice = indice +1;    
+}
+    
+}
+

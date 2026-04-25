@@ -327,17 +327,113 @@ function exercicio19CadastrarProdutos() {
 function exercicio20RelatorioSimples() {
     let soma = 0;
     let media = 0;
-    
+
     let pessoasCadastradas = 0;
     for (let indice = 0; indice < 3; indice = indice + 1) {
         let nome = prompt("Digite seu nome");
         let idade = parseInt(prompt("Digite sua idade"))
-        
+
         pessoasCadastradas = pessoasCadastradas + 1;
         soma = soma + idade;
         media = media + idade / 3;
     }
-    
+
     console.log("Quantidades de pessoas cadastradas: " + pessoasCadastradas + "\n" + "Soma das idades: " + soma + "\n" + "Média das idades: " + media);
+}
+
+
+function exercicio21MostrarNumerosParesIntervalo() {
+    let comeco = parseInt(prompt("Digite o número do começo"))
+    let fim = parseInt(prompt("Digite o número final"))
+
+    for (indice = comeco; indice <= fim; indice = indice + 1) {
+
+        if (indice % 2 === 0) {
+            alert(indice)
+            console.log(indice);
+        }
+    }
+}
+
+function exercicio22SomarNumerosIntervalo() {
+    let comeco = parseInt(prompt("Digite o número do começo"))
+    let fim = parseInt(prompt("Digite o número final"))
+    let soma = 0;
+    for (let indice = comeco; indice <= fim; indice = indice + 1) {
+
+        soma = soma + indice
+
+    }
+    console.log(soma);
+}
+function exercicio23ContarNumerosNegativos() {
+
+    let numeroTotal = 0;
+    for (indice = 0; indice < 6; indice = indice + 1) {
+        let numero = parseInt(prompt("Digite um número"))
+        if (numero < 0) {
+            numeroTotal = numeroTotal + 1;
+        }
+    }
+    console.log(" Quantidade de números negativos" + " " + numeroTotal);
+
+}
+
+function exercicio24CalcularMediaAlturas() {
+    let somaAltura = 0;
+    for (indice = 0; indice < 5; indice = indice + 1) {
+        let altura = parseFloat(prompt("Digite sua altura"))
+        somaAltura = somaAltura + altura
+
+    }
+
+    console.log(somaAltura);
+}
+
+function exercicio25ContarNotasAcimaSete() {
+
+    let notasMaiores = 0;
+    for (indice = 0; indice < 9; indice = indice + 1) {
+        let notas = parseInt(prompt("Digite suas notas"))
+        if (notas >= 7) {
+            notasMaiores = notasMaiores + 1
+            console.log("Notas maiores que 7: " + notasMaiores)
+        }
+    }
+}
+
+function exercicio26MaiorEMenorNumero() {
+    let numeroMenor = 10000000000000000000000000000000000000000000000000000;
+    let numeroMaior = 0;
+    for (indice = 0; indice < 8; indice = indice + 1) {
+        let numero = parseInt(prompt("Digite seu número"))
+
+        if (numero > numeroMaior) {
+            numeroMaior = numero
+            console.log("O número maior é :" + numeroMaior);
+        }
+
+        if (numero < numeroMenor) {
+            numeroMenor = numero
+            console.log("Numero menor é :" + numeroMenor);
+
+        }
+        console.log("Número menor é :" + numeroMenor + "\n" + "Número maior é : " + numeroMaior);
+    }
+}
+
+function exercicio27SomarIdadesMaioresDeIdade() {
+    let maiorIdade = 0;
+    for (indice = 0; indice < 5; indice = indice + 1) {
+        let nome = prompt("Digite seu nome")
+        let idade = parseInt(prompt("Digite sua idade"))
+
+        if (idade >= 18) {
+            maiorIdade = maiorIdade + idade
+        }
+
+    }
+    console.log("Idades somadas das pessoas com mais de 18 anos: " + maiorIdade);
+
 }
 
