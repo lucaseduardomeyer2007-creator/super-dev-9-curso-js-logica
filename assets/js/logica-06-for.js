@@ -437,3 +437,24 @@ function exercicio27SomarIdadesMaioresDeIdade() {
 
 }
 
+function exercicio28ContarHomensEMulheres() {
+   
+    for (indice = 0; indice < 7; indice = indice + 1) {
+        let nome = prompt("Digite seu nome")
+        let sexo = prompt("Digite seu sexo")
+        let M = 0
+        let F = 0
+        if (sexo === M) {
+            M + 1;
+        }
+        if (sexo === F) {
+
+            F + 1;
+
+        }
+    console.log(nome + "\n" + sexo);
+    }
+}
+
+
+//PRECISO FAZER A QUESTÃO ACIMA, E A QUESTÃO DE TABUADA, PEDIR AJUDA PRO SAMUEL, E TAMBÉM PEDIR AJUDA PRA ENTENDER OS MÉTODOS STRING
