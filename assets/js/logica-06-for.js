@@ -438,10 +438,10 @@ function exercicio27SomarIdadesMaioresDeIdade() {
 }
 
 function exercicio28ContarHomensEMulheres() {
-   
+    let sexo = prompt("Digite seu sexo")
     for (indice = 0; indice < 7; indice = indice + 1) {
         let nome = prompt("Digite seu nome")
-        let sexo = prompt("Digite seu sexo")
+
         let M = 0
         let F = 0
         if (sexo === M) {
@@ -452,9 +452,39 @@ function exercicio28ContarHomensEMulheres() {
             F + 1;
 
         }
-    console.log(nome + "\n" + sexo);
+        console.log(nome + "\n" + sexo);
     }
 }
 
+    function exercicio30TabuadasCompletas() {
+
+        // Laço para percorrer os números de 1 até 5 (cada tabuada)
+        for (let numeroDaTabuada = 1; numeroDaTabuada <= 5; numeroDaTabuada++) {
+    
+            console.log("Tabuada do número " + numeroDaTabuada + ":");
+    
+            // Laço para fazer as multiplicações de 1 até 10
+            for (let multiplicador = 1; multiplicador <= 10; multiplicador = multiplicador + 1) {
+    
+                let resultadoDaMultiplicacao = numeroDaTabuada * multiplicador;
+    
+                console.log(
+                    numeroDaTabuada + " x " + multiplicador + " = " + resultadoDaMultiplicacao
+                );
+            }
+    
+            // Linha separadora entre as tabuadas
+            console.log("=================================");
+        }
+    }
+
+
+
+
+
+
+
 
 //PRECISO FAZER A QUESTÃO ACIMA, E A QUESTÃO DE TABUADA, PEDIR AJUDA PRO SAMUEL, E TAMBÉM PEDIR AJUDA PRA ENTENDER OS MÉTODOS STRING
+
+

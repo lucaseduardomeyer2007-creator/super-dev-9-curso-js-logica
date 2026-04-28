@@ -180,3 +180,146 @@ function descobrirIndiceDoCaracter() {
     console.log("Cartão: " + numeroCartao);
     console.log("Primeira parte do Cartão: " + primeiraParteCartao);
 }
+
+
+function contarLetrasNome() {
+    let nome = prompt("Digite um nome");
+    let quantidadeCaracteres = nome.length
+    console.log("quantidade de caracteres: " + quantidadeCaracteres);
+}
+
+function converterParaMaiusculas() {
+    let frase = prompt("Digite uma frase");
+    let fraseMaiuscula = frase.toUpperCase();
+    console.log("Frase maiúscula: " + fraseMaiuscula);
+}
+
+function converterParaMinusculas() {
+    let frase = prompt("Digite uma frase");
+    let fraseMinuscula = frase.toLowerCase();
+
+    console.log("Frase minúscula: " + fraseMinuscula);
+}
+
+function mostrarPrimeiraLetra() {
+    let texto = prompt("Digite uma palavra");
+    let textoLetra = texto[0]
+
+    console.log("Primeira letra: " + textoLetra);
+}
+
+function mostrarUltimaLetra() {
+    let palavra = prompt("Digite uma palavra");
+    let ultimaLetra = palavra.length
+
+    console.log("Última letra: " + ultimaLetra);
+}
+
+function verificarPalavraNaFrase() {
+    let frase = prompt("Digite uma frase");
+    let frasePalavra = "estudar";
+
+    if (frase.includes(frasePalavra) === true)
+        alert("contém a palavra estudar")
+
+    else {
+        alert("Não contém a palavra estudar")
+    }
+}
+
+function substituirCorNaFrase() {
+    let frase = prompt("Digite sua frase");
+    texto = frase.replace("azul", "vermelho");
+
+    console.log("Frase Corrigida :" + texto);
+}
+
+function trocarEstacao() {
+    let frase = "Eu gosto de verão";
+    texto = frase.replace("verão", "inverno");
+
+    console.log("Frase: " + texto);
+}
+
+function mostrarQuatroPrimeirosCaracteres() {
+    let palavra = prompt("Digite uma palavra");
+    let resultado = palavra.slice(0, 4);
+
+    console.log(resultado);
+}
+
+function separarNomeCompleto() {
+    let nomeCompleto = prompt("Digite seu nome completo: ");
+
+    let partes = nomeCompleto.trim().split(" ");
+
+    let nome = partes[0];
+    let sobreNome = partes[1];
+    let sobreNome2 = partes[2];
+
+    console.log(nome + "\n" + sobreNome + " \n" + sobreNome2);
+}
+
+function removerEspacosExtras() {
+    let texto = "   JavaScript   "
+    textoCorrigido = texto.trim();
+
+    console.log(textoCorrigido);
+}
+
+function repetirPalavraTresVezes() {
+    let palavra = prompt("Digite uma palavra");
+    let palavraRepetida = palavra.repeat(3);
+
+    console.log(palavraRepetida);
+}
+
+/*function quebrarString() {
+    //String              01234
+    let horaMinuto = "20:30";
+
+    let partes = horaMinuto.split(":");
+    //
+    // split => ["20", "30"]
+
+    console.log(partes);
+
+    let hora = partes[0];
+    let minuto = partes[1];
+
+    console.log("Hora: " + hora);
+    console.log("Minuto: " + minuto);*/
+
+
+
+
+
+function encontrarPosicaoPalavra() {
+    let frase = "Eu estudo JavaScript todos os dias"
+    let palavra = frase.split(" ")
+    let palavrafinal = palavra.slice()
+    //PRECISO DE AJUDA, NÃO SOUBE FAZER
+    console.log(frase);
+
+    console.log(palavra);
+
+}
+
+function verificarInicioEFim() {
+    let palavra = prompt("Digite uma palavra");
+
+    if (palavra.startsWith("a"))
+        alert("A palavra começa com a letra A");
+
+
+    else if (palavra.endsWith("o") === true)
+        alert("A palavra termina com a letra O")
+}
+
+function trocarDominioEmail() {
+    let email = prompt("Digite seu e-mail");
+    let final = email.replace("@gmail.com", "@hotmail.com")
+
+
+    console.log("Seu email alterado: " + final);
+}
