@@ -189,63 +189,172 @@ function exercicio04() {
     )
 }
 
+
 function exercicio05() {
     let filmes = [];
     let generos = [];
     let duracoes = [];
     let duracoesHoras = [];
 
+    // Entrada de dados para 4 filmes (sem for/while)
+    filmes.push(prompt("Digite o nome do filme 1"));
+    generos.push(prompt("Digite o gênero do filme 1"));
+    duracoes.push(parseFloat(prompt("Digite a duração do filme 1 em minutos")));
+    duracoesHoras.push(duracoes[0] / 60);
 
-    filmes.push(prompt("Digite o nome de um filme"))
-    generos.push(prompt("Digite o genero do filme"))
-    duracoes.push(parseFloat(prompt("Digite a duração do filme em minutos")))
+    filmes.push(prompt("Digite o nome do filme 2"));
+    generos.push(prompt("Digite o gênero do filme 2"));
+    duracoes.push(parseFloat(prompt("Digite a duração do filme 2 em minutos")));
+    duracoesHoras.push(duracoes[1] / 60);
+
+    filmes.push(prompt("Digite o nome do filme 3"));
+    generos.push(prompt("Digite o gênero do filme 3"));
+    duracoes.push(parseFloat(prompt("Digite a duração do filme 3 em minutos")));
+    duracoesHoras.push(duracoes[2] / 60);
+
+    filmes.push(prompt("Digite o nome do filme 4"));
+    generos.push(prompt("Digite o gênero do filme 4"));
+    duracoes.push(parseFloat(prompt("Digite a duração do filme 4 em minutos")));
+    duracoesHoras.push(duracoes[3] / 60);
+
+    // Alterar gênero do segundo filme
+    generos[1] = prompt("Digite um novo gênero para o segundo filme");
+
+    // Alterar duração do primeiro filme
+    duracoes[0] = parseFloat(prompt("Digite a nova duração do primeiro filme em minutos"));
+    duracoesHoras[0] = duracoes[0] / 60; // recalcular em horas
+
+    // Remover o último filme usando splice
+    filmes.splice(3, 1);
+    generos.splice(3, 1);
+    duracoes.splice(3, 1);
+    duracoesHoras.splice(3, 1);
+
+    // Exibir os dados dos filmes restantes
+    alert(
+        "Filme 1: " + filmes[0] +
+        "\nGênero: " + generos[0] +
+        "\nDuração (min): " + duracoes[0] +
+        "\nDuração (h): " + duracoesHoras[0].toFixed(2) + "\n\n" +
+
+        "Filme 2: " + filmes[1] +
+        "\nGênero: " + generos[1] +
+        "\nDuração (min): " + duracoes[1] +
+        "\nDuração (h): " + duracoesHoras[1].toFixed(2) + "\n\n" +
+
+        "Filme 3: " + filmes[2] +
+        "\nGênero: " + generos[2] +
+        "\nDuração (min): " + duracoes[2] +
+        "\nDuração (h): " + duracoesHoras[2]
+    )
+    // Mostra no alerta
+    alert(resultado);
+
+    // Mostra também no console
+    console.log(resultado);
+}
 
 
-    filmes.push(prompt("Digite o nome de um filme"))
-    generos.push(prompt("Digite o genero do filme"))
-    duracoes.push(parseFloat(prompt("Digite a duração do filme em minutos")))
+function exercicio06() {
 
+    let produtos = [];
+    let quantidades = [];
+    let precos = [];
+    let valoresTotais = [];
 
-
-    filmes.push(prompt("Digite o nome de um filme"))
-    generos.push(prompt("Digite o genero do filme"))
-    duracoes.push(parseFloat(prompt("Digite a duração do filme em minutos")))
-
+    produtos.push(prompt("Digite o produto"))
+    quantidades.push(parseInt(prompt("Digite a quantidade do produto")))
+    precos.push(parseFloat(prompt("Digite o valor unitário do produto")))
     
-    filmes.push(prompt("Digite o nome de um filme"))
-    generos.push(prompt("Digite o genero do filme"))
-    duracoes.push(parseFloat(prompt("Digite a duração do filme em minutos")))
-
-
-    generos[1] = prompt("Digite um novo genero para o segundo filme")
-    duracoes[0] = prompt("Qual a nova duração do primeiro filme")
-
-    filmes.splice(3, 1)
-    duracoes.splice(3, 1)
-    duracoesHoras.splice(3, 1)
-    generos.splice(3, 1)
     
-    if(duracoes > 60) {
-        duracoesHoras = duracoes / 60
-    }
+    
+    produtos.push(prompt("Digite o produto"))
+    quantidades.push(parseInt(prompt("Digite a quantidade do produto")))
+    precos.push(parseFloat(prompt("Digite o valor unitário do produto")))
+    
+    
+    
+    produtos.push(prompt("Digite o produto"))
+    quantidades.push(parseInt(prompt("Digite a quantidade do produto")))
+    precos.push(parseFloat(prompt("Digite o valor unitário do produto")))
+    
+    
+
+    produtos.push(prompt("Digite um novo produto"))
+    quantidades.push(parseInt(prompt("Digite a quantidade do produto")))
+    precos.push(parseFloat(prompt("Digite o valor unitário do produto")))
+
+
+    produtos.splice(0, 1)
+
+    valoresTotais = valoresTotais + produtos
 
     alert(
-    "Filme 1: " + filmes[0] +
-    "Genero: " + generos[0] +
-    "duracoes: " + duracoes[0] +
-    " Duracoes em horas: " + duracoesHoras[0] +
-    "\nFilme 2: " + filmes[1] +
-    " Genero: " + generos[1] +
-    " duracoes: " + duracoes[1] +
-    " Duracoes em horas: " + duracoesHoras[1] +
-    "\nFilme 3: " + filmes[2] +
-    " Genero: " + generos[2] +
-    " duracoes: " + duracoes[2] +
-    " Duracoes em horas: " + duracoesHoras[2] +
-    "\nFilme 4: " + filmes[3] +
-    " Genero: " + generos[3] +
-    " duracoes: " + duracoes[3] +
-    " Duracoes em horas: " + duracoesHoras[3] 
-    )
+    "Produto 1: " + produtos[0] +
+    " quantidade: " + quantidades[0] +
+    " preco unitário: " + precos[0] + valoresTotais[0] +
+    "\n Produto 2: " + produtos[1] +
+    " quantidade: " + quantidades[1] +
+    " preco unitário: " + precos[1] + valoresTotais[1] +
+    "\n Produto 3: " + produtos[2] +
+    " quantidade: " + quantidades[2] +
+    " preco unitário: " + precos[2] + valoresTotais[2] 
+    
+)
+}
+function exercicio06() {
+    let produtos = [];
+    let quantidades = [];
+    let precos = [];
+    let valoresTotais = [];
 
+    // Entrada de 3 produtos
+    produtos.push(prompt("Digite o produto 1"));
+    quantidades.push(parseInt(prompt("Digite a quantidade do produto 1")));
+    precos.push(parseFloat(prompt("Digite o valor unitário do produto 1")));
+    valoresTotais.push(quantidades[0] * precos[0]);
+
+    produtos.push(prompt("Digite o produto 2"));
+    quantidades.push(parseInt(prompt("Digite a quantidade do produto 2")));
+    precos.push(parseFloat(prompt("Digite o valor unitário do produto 2")));
+    valoresTotais.push(quantidades[1] * precos[1]);
+
+    produtos.push(prompt("Digite o produto 3"));
+    quantidades.push(parseInt(prompt("Digite a quantidade do produto 3")));
+    precos.push(parseFloat(prompt("Digite o valor unitário do produto 3")));
+    valoresTotais.push(quantidades[2] * precos[2]);
+
+    // Novo produto
+    produtos.push(prompt("Digite o novo produto"));
+    quantidades.push(parseInt(prompt("Digite a quantidade do novo produto")));
+    precos.push(parseFloat(prompt("Digite o valor unitário do novo produto")));
+    valoresTotais.push(quantidades[3] * precos[3]);
+
+    // Alterar preço do segundo produto
+    precos[1] = parseFloat(prompt("Digite o novo preço do segundo produto"));
+    valoresTotais[1] = quantidades[1] * precos[1]; // recalcular
+
+    // Apagar o primeiro produto
+    produtos.splice(0, 1);
+    quantidades.splice(0, 1);
+    precos.splice(0, 1);
+    valoresTotais.splice(0, 1);
+
+    // Exibir os dados
+    alert(
+        "Produto 1: " + produtos[0] +
+        "\nQuantidade: " + quantidades[0] +
+        "\nPreço unitário: " + precos[0] +
+        "\nValor total: " + valoresTotais[0] + "\n\n" +
+
+        "Produto 2: " + produtos[1] +
+        "\nQuantidade: " + quantidades[1] +
+        "\nPreço unitário: " + precos[1] +
+        "\nValor total: " + valoresTotais[1] + "\n\n" +
+
+        "Produto 3: " + produtos[2] +
+        "\nQuantidade: " + quantidades[2] +
+        "\nPreço unitário: " + precos[2] +
+        "\nValor total: " + valoresTotais[2]
+    )
 }
