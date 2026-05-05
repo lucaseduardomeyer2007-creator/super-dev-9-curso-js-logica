@@ -308,7 +308,7 @@ function exercicio06() {
     let precos = [];
     let valoresTotais = [];
 
-    // Entrada de 3 produtos
+    
     produtos.push(prompt("Digite o produto 1"));
     quantidades.push(parseInt(prompt("Digite a quantidade do produto 1")));
     precos.push(parseFloat(prompt("Digite o valor unitário do produto 1")));
@@ -324,23 +324,23 @@ function exercicio06() {
     precos.push(parseFloat(prompt("Digite o valor unitário do produto 3")));
     valoresTotais.push(quantidades[2] * precos[2]);
 
-    // Novo produto
+    
     produtos.push(prompt("Digite o novo produto"));
     quantidades.push(parseInt(prompt("Digite a quantidade do novo produto")));
     precos.push(parseFloat(prompt("Digite o valor unitário do novo produto")));
     valoresTotais.push(quantidades[3] * precos[3]);
 
-    // Alterar preço do segundo produto
+    
     precos[1] = parseFloat(prompt("Digite o novo preço do segundo produto"));
-    valoresTotais[1] = quantidades[1] * precos[1]; // recalcular
+    valoresTotais[1] = quantidades[1] * precos[1]; 
 
-    // Apagar o primeiro produto
+    
     produtos.splice(0, 1);
     quantidades.splice(0, 1);
     precos.splice(0, 1);
     valoresTotais.splice(0, 1);
 
-    // Exibir os dados
+    
     alert(
         "Produto 1: " + produtos[0] +
         "\nQuantidade: " + quantidades[0] +
