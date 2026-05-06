@@ -35,7 +35,7 @@ function exemplo02() {
 
     for (let i = 0; i < 3; i += 1) {
         let nota1 = notas1[i];
-        let nota1 = notas2[i];
+        let nota2 = notas2[i];
         let media = (nota1 + nota2) / 2;
 
         let status = "";
