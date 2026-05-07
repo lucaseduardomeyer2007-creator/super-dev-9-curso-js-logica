@@ -247,10 +247,54 @@ function exercicio05() {
         notas.push(parseFloat(prompt("Digite as 4 notas")))
     }
 
-    for(i = 0; i < 4; i += 1) {
+    for (i = 0; i < 4; i += 1) {
 
         soma = soma + notas[i]
     }
-        media = media + soma / 4
+    media = media + soma / 4
     alert(media)
+}
+
+function exercicio06() {
+    produtos = [];
+
+    for (i = 0; i < 4; i += 1) {
+
+        produtos.push(prompt("Digite seus produtos"))
+
+    }
+    for (i = 0; i < 4; i += 1) {
+
+        alert(produtos)
+
+    }
+
+    produtos[2] = prompt("Digite um novo nome para o terceiro produto")
+
+    for (i = 0; i < 4; i += 1) {
+
+        alert(produtos)
+    }
+}
+
+function exercicio07() {
+    temperaturas = [];
+    let maiorTemperatura = 0;
+
+    for (i = 0; i < 5; i += 1) {
+
+        temperaturas.push(parseInt(prompt("Digite as 5 temperaturas")))
+
+    
+    }
+    let temperatura = temperaturas[i]
+    for (i = 0; i < 5; i += 1) {
+
+        if(temperatura > maiorTemperatura) {
+
+            maiorTemperatura = temperaturas
+        }
+    
+    alert(maiorTemperatura)
+    }
 }
