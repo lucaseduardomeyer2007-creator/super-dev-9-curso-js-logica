@@ -279,22 +279,115 @@ function exercicio06() {
 
 function exercicio07() {
     temperaturas = [];
-    let maiorTemperatura = 0;
 
-    for (i = 0; i < 5; i += 1) {
+
+    for (let i = 0; i < 5; i += 1) {
 
         temperaturas.push(parseInt(prompt("Digite as 5 temperaturas")))
-
-    
     }
-    let temperatura = temperaturas[i]
-    for (i = 0; i < 5; i += 1) {
+    let maiorTemperatura = 0;
+    for (let i = 0; i < temperaturas.length; i += 1) {
 
-        if(temperatura > maiorTemperatura) {
+        if (temperaturas > maiorTemperatura) {
 
-            maiorTemperatura = temperaturas
+            maiorTemperatura = temperaturas[i]
         }
-    
-    alert(maiorTemperatura)
     }
+
+    alert(maiorTemperaturas)
+}
+
+
+function exercicio08() {
+    let precos = []
+
+    for (let i = 0; i < 4; i += 1) {
+
+        precos.push(parseFloat(prompt("Digite os 4 preços")))
+    }
+    let menorPreco = 9999999;
+
+    for (let i = 0; i < precos.length; i += 1) {
+
+        if (precos[i] < menorPreco) {
+
+            menorPreco = precos[i]
+        }
+    }
+    alert(menorPreco)
+}
+
+function exercicio09() {
+
+    let numeros = []
+
+    for (i = 0; i < 6; i += 1) {
+
+        numeros.push(parseInt(prompt("Digite 6 números")))
+    }
+    let numeroPar = 0;
+    for (i = 0; i < 6; i += 1) {
+
+        if (i % 2 === 0) {
+
+            numeroPar = numeros[i]
+        }
+    }
+
+    alert(numeroPar)
+}
+
+function exercicio10() {
+
+    let alunos = []
+
+    for (let i = 0; i < 5; i += 1) {
+
+        alunos.push(prompt("Digite o nome dos 5 alunos"))
+
+    }
+
+    let nomePesquisa = prompt("Digite o nome para pesquisar")
+    nomeEncontrado = false
+    for (let i = 0; i < 6; i += 1) {
+
+        if (nomePesquisa === alunos[i]) {
+
+            nomeEncontrado = true
+        }
+
+    }
+
+    if (nomeEncontrado === true) {
+
+        alert("Nome encontrado")
+    }
+    else {
+        alert("Nome não encontrado")
+    }
+}
+
+function exercicio11() {
+
+    let numeros = []
+
+    for (let i = 0; i < 6; i += 1) {
+
+        numeros.push(parseInt(prompt("Digite os 6 números")))
+    }
+    let maiorNumero = 0;
+
+    for (let i = 0; i < 6; i += 1) {
+
+    }
+    alert(numeros)
+    for (let i = 0; i < numeros.length; i += 1) {
+
+        if (numeros >= 10) {
+
+            maiorNumero = numeros
+        }
+
+    }
+    alert(maiorNumero)
 }
