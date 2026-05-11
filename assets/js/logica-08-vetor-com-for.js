@@ -391,3 +391,141 @@ function exercicio11() {
     }
     alert(maiorNumero)
 }
+
+
+function exercicio12() {
+
+    nomes = [];
+
+    for (let i = 0; i < 5; i += 1) {
+
+        nomes.push(prompt("Digite 5 nomes"))
+
+    }
+
+    let contarNomes = 0;
+
+    for (let i = 0; i < 5; i += 1) {
+
+        if (nomes[i].length >= 5) {
+            contarNomes = contarNomes + 1
+
+        }
+
+
+    }
+    alert(contarNomes)
+}
+
+
+function exercicio13() {
+
+    idades = [];
+
+
+    for (i = 0; i < 7; i += 1) {
+
+        idades.push(parseInt(prompt("Digite as 7 idades")))
+
+    }
+    let menorIdade = 0;
+    let maiorIdade = 0;
+
+    for (i = 0; i < 7; i += 1) {
+
+        if (idades[i] < 18) {
+
+            menorIdade = menorIdade + 1;
+        }
+
+        else {
+            maiorIdade = maiorIdade + 1;
+
+        }
+
+    }
+    alert("quantidade de menores de idade: " + menorIdade +
+        "\n quantidade dos maiores de idade: " + maiorIdade
+    )
+}
+
+function exercicio14() {
+    notas = [];
+
+    for (i = 0; i < 6; i += 1) {
+
+        notas.push(parseFloat(prompt("Digite as 6 notas")))
+    }
+    for (i = 0; i < notas[i]; i += 1) {
+
+        alert(notas)
+    }
+    let maiorNota = 0;
+    for (i = 0; i < 6; i += 1) {
+
+        if (notas[i] >= 7) {
+
+            maiorNota = maiorNota + 1
+        }
+    }
+    alert("Quantidade de notas maiores que 7: " + maiorNota)
+}
+
+function exercicio15() {
+
+    cidades = [];
+
+    for (let i = 0; i < 4; i += 1) {
+
+        cidades.push(prompt("Digite 4 cidades"))
+
+    }
+
+
+    cidades[3] = prompt("Digite uma nova cidade");
+
+    for (let i = 0; i < 4; i += 1) {
+
+        alert(cidades[i])
+
+    }
+}
+
+
+function exercicio16() { //AJUDAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+
+    produtos = [];
+
+    for (i = 0; i < 5; i += 1) {
+
+        produtos.push(prompt("Digite 5 produtos"))
+
+    }
+}
+
+
+function exercicio17() {
+
+    numeros = [];
+
+
+    for (i = 0; i < 8; i += 1) {
+        numeros.push(parseInt(prompt("Digite 8 números")))
+    }
+
+    let numerosPares = 0;
+
+    let numerosImpares = 0;
+    for (let i = 0; i < numeros.length; i++) {
+        if (numeros[i] % 2 === 0) {
+            numerosPares = numerosPares + numeros[i];
+        }
+        else {
+            numerosImpares = numerosImpares + numeros[i];
+        }
+    }
+    alert("Soma dos números pares: " + numerosPares +
+        "\nSoma dos números ímpares: " + numerosImpares
+    )
+}
+
